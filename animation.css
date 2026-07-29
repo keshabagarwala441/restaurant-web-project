@@ -1,0 +1,215 @@
+/*=====================================
+FADE IN
+=====================================*/
+
+@keyframes fadeIn{
+
+0%{
+opacity:0;
+transform:translateY(30px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/*=====================================
+SLIDE LEFT
+=====================================*/
+
+@keyframes slideLeft{
+
+0%{
+opacity:0;
+transform:translateX(-60px);
+}
+
+100%{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+/*=====================================
+SLIDE RIGHT
+=====================================*/
+
+@keyframes slideRight{
+
+0%{
+opacity:0;
+transform:translateX(60px);
+}
+
+100%{
+opacity:1;
+transform:translateX(0);
+}
+
+}
+
+/*=====================================
+ZOOM IN
+=====================================*/
+
+@keyframes zoomIn{
+
+0%{
+opacity:0;
+transform:scale(.8);
+}
+
+100%{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+/*=====================================
+FLOAT
+=====================================*/
+
+@keyframes float{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+}
+
+/*=====================================
+ROTATE
+=====================================*/
+
+@keyframes rotate{
+
+from{
+transform:rotate(0deg);
+}
+
+to{
+transform:rotate(360deg);
+}
+
+}
+
+/*=====================================
+CLASSES
+=====================================*/
+
+.fade-in{
+animation:fadeIn .8s ease forwards;
+}
+
+.slide-left{
+animation:slideLeft .8s ease forwards;
+}
+
+.slide-right{
+animation:slideRight .8s ease forwards;
+}
+
+.zoom-in{
+animation:zoomIn .8s ease forwards;
+}
+
+.float{
+animation:float 3s ease-in-out infinite;
+}
+
+.rotate{
+animation:rotate 12s linear infinite;
+}
+
+/*=====================================
+HOVER EFFECTS
+=====================================*/
+
+.card,
+.feature-box,
+.gallery-item{
+
+transition:.4s ease;
+
+}
+
+.card:hover,
+.feature-box:hover{
+
+transform:translateY(-10px);
+
+}
+
+.gallery-item{
+
+overflow:hidden;
+border-radius:15px;
+cursor:pointer;
+
+}
+
+.gallery-item img{
+
+width:100%;
+height:100%;
+display:block;
+transition:.5s;
+
+}
+
+.gallery-item:hover img{
+
+transform:scale(1.1);
+
+}
+
+/*=====================================
+BUTTON
+=====================================*/
+
+.btn{
+
+transition:.3s ease;
+
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+
+}
+
+/*=====================================
+SOCIAL ICON
+=====================================*/
+
+.social a:hover{
+
+transform:translateY(-5px);
+
+}
+
+/*=====================================
+BACK TO TOP
+=====================================*/
+
+#topBtn{
+
+transition:.3s ease;
+
+}
+
+#topBtn:hover{
+
+transform:scale(1.1);
+
+}

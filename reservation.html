@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reservation | Delizia Restaurant</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animation.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<a href="index.html" class="logo">Delizia</a>
+
+<nav class="navbar">
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="reservation.html" class="active">Reservation</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<a href="reservation.html" class="btn">Book Table</a>
+
+<div class="menu-toggle">
+<i class="fas fa-bars"></i>
+</div>
+
+</div>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero" style="height:60vh;">
+
+<div class="container hero-content">
+
+<h1>Book Your Table</h1>
+
+<p>
+
+Reserve your dining experience in just a few steps.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Reservation Form -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h5>Reservation</h5>
+
+<h2>Reserve a Table</h2>
+
+</div>
+
+<form id="reservationForm" class="reservation-form">
+
+<div class="grid-2">
+
+<div>
+
+<label>Full Name</label>
+
+<input
+type="text"
+id="name"
+placeholder="Enter your full name"
+required>
+
+</div>
+
+<div>
+
+<label>Email Address</label>
+
+<input
+type="email"
+id="email"
+placeholder="Enter your email"
+required>
+
+</div>
+
+<div>
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+id="phone"
+placeholder="10-digit phone number"
+required>
+
+</div>
+
+<div>
+
+<label>Number of Guests</label>
+
+<input
+type="number"
+id="guests"
+min="1"
+max="20"
+placeholder="Guests"
+required>
+
+</div>
+
+<div>
+
+<label>Date</label>
+
+<input
+type="date"
+id="date"
+required>
+
+</div>
+
+<div>
+
+<label>Time</label>
+
+<input
+type="time"
+id="time"
+required>
+
+</div>
+
+</div>
+
+<div style="margin-top:25px;">
+
+<label>Special Requests</label>
+
+<textarea
+id="message"
+rows="6"
+placeholder="Any special requests..."></textarea>
+
+</div>
+
+<div style="margin-top:30px;text-align:center;">
+
+<button class="btn" type="submit">
+
+Reserve Now
+
+</button>
+
+</div>
+
+</form>
+
+</div>
+
+</section>
+<!-- ================= RESERVATION INFO ================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h5>Why Reserve With Us</h5>
+
+<h2>Enjoy A Premium Dining Experience</h2>
+
+</div>
+
+<div class="feature-grid">
+
+<div class="feature-box">
+
+<i class="fas fa-calendar-check"></i>
+
+<h3>Easy Booking</h3>
+
+<p>
+
+Reserve your table online in just a few clicks.
+
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<i class="fas fa-clock"></i>
+
+<h3>Flexible Timing</h3>
+
+<p>
+
+Lunch and dinner reservations available every day.
+
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<i class="fas fa-users"></i>
+
+<h3>Family Friendly</h3>
+
+<p>
+
+Perfect for family dinners, parties and celebrations.
+
+</p>
+
+</div>
+
+<div class="feature-box">
+
+<i class="fas fa-star"></i>
+
+<h3>Premium Service</h3>
+
+<p>
+
+Professional staff dedicated to making your visit memorable.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= OPENING HOURS ================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>Opening Hours</h2>
+
+<p>Monday – Friday : 11:00 AM – 10:30 PM</p>
+
+<p>Saturday : 10:00 AM – 11:30 PM</p>
+
+<p>Sunday : 10:00 AM – 10:00 PM</p>
+
+<br>
+
+<h3>Need Help?</h3>
+
+<p>📞 +91 9876543210</p>
+
+<p>✉ info@delizia.com</p>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<h3>Delizia</h3>
+
+<p>
+
+Experience fine dining with exceptional cuisine and warm hospitality.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="menu.html">Menu</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p>📍 Kolkata, India</p>
+
+<p>📞 +91 9876543210</p>
+
+<p>✉ info@delizia.com</p>
+
+</div>
+
+<div>
+
+<h3>Follow Us</h3>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-twitter"></i></a>
+
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+<p>&copy; 2026 Delizia Restaurant. All Rights Reserved.</p>
+
+</div>
+
+</footer>
+
+<button id="topBtn">
+
+<i class="fas fa-arrow-up"></i>
+
+</button>
+
+<script src="js/main.js"></script>
+<script src="js/reservation.js"></script>
+
+</body>
+</html>

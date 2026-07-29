@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Menu | Delizia Restaurant</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animation.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="container">
+
+<a href="index.html" class="logo">Delizia</a>
+
+<nav class="navbar">
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="menu.html" class="active">Menu</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="reservation.html">Reservation</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<a href="reservation.html" class="btn">Book Table</a>
+
+<div class="menu-toggle">
+<i class="fas fa-bars"></i>
+</div>
+
+</div>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero" style="height:60vh;">
+
+<div class="container hero-content">
+
+<h1>Our Menu</h1>
+
+<p>
+Discover our delicious collection of handcrafted dishes.
+</p>
+
+</div>
+
+</section>
+
+<!-- Menu Controls -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h5>Food Menu</h5>
+
+<h2>Explore Our Dishes</h2>
+
+</div>
+
+<div style="display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin-bottom:40px;">
+
+<input
+type="text"
+id="menuSearch"
+placeholder="Search dishes..."
+style="padding:12px 20px;border:1px solid #ddd;border-radius:30px;width:260px;">
+
+<select id="sortMenu" style="padding:12px 20px;border-radius:30px;">
+
+<option value="">Sort Price</option>
+<option value="low">Low → High</option>
+<option value="high">High → Low</option>
+
+</select>
+
+</div>
+
+<div style="text-align:center;margin-bottom:40px;">
+
+<button class="filter-btn active btn" data-filter="all">All</button>
+
+<button class="filter-btn btn" data-filter="starter">Starters</button>
+
+<button class="filter-btn btn" data-filter="main">Main Course</button>
+
+<button class="filter-btn btn" data-filter="dessert">Desserts</button>
+
+<button class="filter-btn btn" data-filter="drink">Drinks</button>
+
+</div>
+
+<div class="cards menu-grid">
+
+<!-- Item -->
+
+<div class="card menu-item starter" data-price="199">
+
+<img src="images/menu/soup.jpg" alt="Soup">
+
+<h3>Tomato Soup</h3>
+
+<p>Fresh creamy tomato soup.</p>
+
+<h4>₹199</h4>
+
+</div>
+
+<div class="card menu-item starter" data-price="249">
+
+<img src="images/menu/bruschetta.jpg">
+
+<h3>Bruschetta</h3>
+
+<p>Garlic bread with tomato topping.</p>
+
+<h4>₹249</h4>
+
+</div>
+
+<div class="card menu-item starter" data-price="299">
+
+<img src="images/menu/salad.jpg">
+
+<h3>Caesar Salad</h3>
+
+<p>Crispy lettuce with parmesan.</p>
+
+<h4>₹299</h4>
+
+</div>
+
+<div class="card menu-item main" data-price="449">
+
+<img src="images/menu/pasta.jpg">
+
+<h3>Creamy Pasta</h3>
+
+<p>Italian white sauce pasta.</p>
+
+<h4>₹449</h4>
+
+</div>
+
+<div class="card menu-item main" data-price="549">
+
+<img src="images/menu/pizza.jpg">
+
+<h3>Margherita Pizza</h3>
+
+<p>Wood fired pizza.</p>
+
+<h4>₹549</h4>
+
+</div>
+
+<div class="card menu-item main" data-price="399">
+
+<img src="images/menu/burger.jpg">
+
+<h3>Classic Burger</h3>
+
+<p>Served with fries.</p>
+
+<h4>₹399</h4>
+
+</div>
+<!-- ================= MORE MENU ITEMS ================= -->
+
+<div class="card menu-item main" data-price="649">
+
+    <img src="images/menu/steak.jpg" alt="Grilled Steak">
+
+    <h3>Grilled Steak</h3>
+
+    <p>Juicy grilled steak with vegetables.</p>
+
+    <h4>₹649</h4>
+
+</div>
+
+<div class="card menu-item main" data-price="499">
+
+    <img src="images/menu/briyani.jpg" alt="Chicken Biryani">
+
+    <h3>Chicken Biryani</h3>
+
+    <p>Traditional aromatic biryani.</p>
+
+    <h4>₹499</h4>
+
+</div>
+
+<div class="card menu-item main" data-price="399">
+
+    <img src="images/menu/noodles.jpg" alt="Hakka Noodles">
+
+    <h3>Hakka Noodles</h3>
+
+    <p>Vegetable noodles with sauces.</p>
+
+    <h4>₹399</h4>
+
+</div>
+
+<div class="card menu-item dessert" data-price="199">
+
+    <img src="images/menu/brownie.jpg" alt="Brownie">
+
+    <h3>Chocolate Brownie</h3>
+
+    <p>Warm brownie with chocolate sauce.</p>
+
+    <h4>₹199</h4>
+
+</div>
+
+<div class="card menu-item dessert" data-price="249">
+
+    <img src="images/menu/icecream.jpg" alt="Ice Cream">
+
+    <h3>Chocolate Ice Cream</h3>
+
+    <p>Classic chocolate with toppings.</p>
+
+    <h4>₹249</h4>
+
+</div>
+
+<div class="card menu-item dessert" data-price="299">
+
+    <img src="images/menu/cheesecake.jpg" alt="Cheesecake">
+
+    <h3>Cheesecake</h3>
+
+    <p>Soft baked New York cheesecake.</p>
+
+    <h4>₹299</h4>
+
+</div>
+
+<div class="card menu-item drink" data-price="149">
+
+    <img src="images/menu/coffee.jpg" alt="Coffee">
+
+    <h3>Cappuccino</h3>
+
+    <p>Fresh roasted premium coffee.</p>
+
+    <h4>₹149</h4>
+
+</div>
+
+<div class="card menu-item drink" data-price="179">
+
+    <img src="images/menu/mojito.jpg" alt="Mojito">
+
+    <h3>Virgin Mojito</h3>
+
+    <p>Refreshing mint cooler.</p>
+
+    <h4>₹179</h4>
+
+</div>
+
+<div class="card menu-item drink" data-price="199">
+
+    <img src="images/menu/shake.jpeg" alt="Milkshake">
+
+    <h3>Chocolate Shake</h3>
+
+    <p>Rich chocolate milkshake.</p>
+
+    <h4>₹199</h4>
+
+</div>
+
+<div class="card menu-item drink" data-price="129">
+
+    <img src="images/menu/tea.jpg" alt="Tea">
+
+    <h3>Masala Tea</h3>
+
+    <p>Indian spiced tea.</p>
+
+    <h4>₹129</h4>
+
+</div>
+
+<div class="card menu-item dessert" data-price="229">
+
+    <img src="images/menu/gulabjamun.jpg" alt="Gulab Jamun">
+
+    <h3>Gulab Jamun</h3>
+
+    <p>Traditional Indian dessert.</p>
+
+    <h4>₹229</h4>
+
+</div>
+
+<div class="card menu-item main" data-price="599">
+
+    <img src="images/menu/fish.jpg" alt="Fish">
+
+    <h3>Grilled Fish</h3>
+
+    <p>Fresh grilled fish with herbs.</p>
+
+    <h4>₹599</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<h3>Delizia</h3>
+
+<p>Experience premium dining with delicious cuisine and unforgettable hospitality.</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="gallery.html">Gallery</a></li>
+
+<li><a href="reservation.html">Reservation</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p>📍 Kolkata, India</p>
+
+<p>📞 +91 9876543210</p>
+
+<p>✉ info@delizia.com</p>
+
+</div>
+
+<div>
+
+<h3>Follow Us</h3>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-twitter"></i></a>
+
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+<p>&copy; 2026 Delizia Restaurant. All Rights Reserved.</p>
+
+</div>
+
+</footer>
+
+<button id="topBtn">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>
